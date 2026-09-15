@@ -1,0 +1,12 @@
+{
+  "version": "1.3.0",
+  "name": "Oreum",
+  "shortName": "Oreum",
+  "description": "A Korean course that adapts to what you keep getting wrong.",
+  "installer": "Oreum-Setup-1.3.0.exe",
+  "sizeNote": "about 110 MB",
+  "published": true,
+  "downloadUrl": "https://github.com/thefozey-sudo/oreum/releases/latest/download/Oreum-Setup-1.3.0.exe",
+  "releasesUrl": "https://github.com/thefozey-sudo/oreum/releases",
+  "releasedAt": "2026-09-15"
+}
