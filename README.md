@@ -9,3 +9,10 @@ privately.
 - Download page: https://thefozey-sudo.github.io/oreum/
 - Phone app: https://thefozey-sudo.github.io/oreum/app/
 - Installers: https://github.com/thefozey-sudo/oreum/releases/latest
+
+The phone app here is 1.4.0, which adds sentence questions to the Learn and
+Review sessions: one question in five is now a sentence built from the words
+that session is already working on. The Windows installer on the release page
+is still 1.3.0 and does not have them yet — it needs a rebuild from the
+private source, which also carries the readable version of the queue and
+ranking added to `assets/app-*.js` here.
