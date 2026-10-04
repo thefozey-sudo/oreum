@@ -13,7 +13,7 @@
  *    never.
  */
 
-const VERSION = '1.3.0'
+const VERSION = '1.4.0'
 const CACHE = 'korean-study-v' + VERSION
 
 /* The shell needed to open the app offline. Hashed asset URLs are added as
