@@ -16,3 +16,9 @@ that session is already working on. The Windows installer on the release page
 is still 1.3.0 and does not have them yet — it needs a rebuild from the
 private source, which also carries the readable version of the queue and
 ranking added to `assets/app-*.js` here.
+
+`desktop/Oreum-1.4.0.bat` runs that same 1.4.0 app on Windows in a window of
+its own, for anyone who wants the sentence questions on the PC before the
+installer catches up. It is not a replacement for the Windows build — gaming
+mode stays there — and `desktop/README.md` covers carrying progress across
+from an existing install.
