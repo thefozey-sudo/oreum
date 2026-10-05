@@ -1,48 +1,46 @@
 # Oreum on the PC, 1.4.0
 
-`Oreum-1.4.0.bat` opens Oreum in a window of its own on Windows, with the
-sentence questions the 1.3.0 installer does not have.
+Two separate things live here. The **updater** is the one you want if Oreum is
+already installed on this PC.
 
-Save it anywhere you like and double-click it. To keep it to hand, right-click
-it and choose **Send to -> Desktop (create shortcut)**. Windows may warn about
-a downloaded script the first time: choose **More info -> Run anyway**, the
-same warning the unsigned installer gets.
+## Update Oreum to 1.4.0 (the installed Windows app)
 
-## What it is, and what it is not
+`Update Oreum to 1.4.0.bat`, with `oreum-1.4.0-app.asar` beside it in the same
+folder. Close Oreum, then double-click the .bat.
 
-It runs the same app your phone runs, in a desktop window, out of a browser
-profile kept only for Oreum under `%LOCALAPPDATA%\Oreum\browser`. It installs
-nothing, it changes nothing, and it leaves the Oreum you already have exactly
-where it is - both can sit on the PC at once.
+It finds the installed app, keeps its 1.3.0 code as `app.asar.1.3.0-backup`,
+and puts 1.4.0 in its place. **Your progress is not touched** — it lives in a
+database of its own under `%APPDATA%\korean-vocab-narrator`, which the updater
+never opens. Nothing is exported, imported or moved; the same app keeps
+reading the same database.
 
-It is not the Windows build. **Gaming mode** - the always-on-top overlay that
-keeps narrating while you play - lives in that build and is not here. Bringing
-the sentence questions to it needs a rebuild from the app source, which this
-repository does not carry.
+Windows may warn about a downloaded script the first time: choose **More
+info -> Run anyway**. If it says it cannot write to the install folder,
+right-click it and choose **Run as administrator**.
 
-## Keeping the progress you already have
+What changes: a Practice session now asks sentence questions as well as word
+ones — one question in five, chosen from the words that session is already
+working on. Put the words in order, which particle fits, what does this mean.
+Answering one credits every word in it, so sentences move the same progress
+words do. Gaming mode, the Smart Session and everything else are untouched.
 
-The two apps keep their own progress, so carry it across once. Nothing below
-deletes anything: an import merges, and a word you have on both sides keeps
-whichever version was studied most recently.
+To undo it: delete `app.asar` in the install folder's `resources` folder and
+rename `app.asar.1.3.0-backup` back to `app.asar`.
 
-1. **In the Oreum you have now**, open Settings and export your learning data.
-   Keep that file somewhere safe - it is your backup as well as the thing you
-   are about to import.
-2. **Run `Oreum-1.4.0.bat`.**
-3. In it, go to **More -> Transfer data -> Import**, and pick the file you
-   just exported.
+## Oreum 1.4.0 in a window (no install)
 
-The home screen should then show the words you have already started.
+`Oreum-1.4.0.bat` opens the web app — the same one the phone runs — in a
+window of its own through Chrome or Edge, out of a browser profile kept only
+for Oreum under `%LOCALAPPDATA%\Oreum\browser`. It installs nothing and leaves
+an existing Oreum install alone.
 
-If you use an Oreum account, signing in on both sides does the same job
-without a file: **More -> Account -> Sign in**, then **Sync now**.
+It is not the Windows build: **gaming mode** and the Smart Session belong
+there and are not in it. Its progress is its own, separate from the installed
+app's. To carry progress into it, export your learning data from the installed
+app's Settings and import it under **More -> Transfer data**; that import
+merges, and a word you have on both sides keeps whichever version was studied
+most recently. An Oreum account signed in on both sides does the same job
+without a file.
 
-## Where your progress lives
-
-In the profile folder, `%LOCALAPPDATA%\Oreum\browser`. Copy that folder
-somewhere to back it up wholesale. Deleting it resets this copy of Oreum back
-to a fresh start, so export from **More -> Transfer data** first.
-
-The app caches itself on first run, so it opens and works without a
-connection after that.
+Save either .bat anywhere; right-click and choose **Send to -> Desktop (create
+shortcut)** to keep it to hand.

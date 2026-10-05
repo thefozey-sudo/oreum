@@ -17,8 +17,10 @@ is still 1.3.0 and does not have them yet — it needs a rebuild from the
 private source, which also carries the readable version of the queue and
 ranking added to `assets/app-*.js` here.
 
-`desktop/Oreum-1.4.0.bat` runs that same 1.4.0 app on Windows in a window of
-its own, for anyone who wants the sentence questions on the PC before the
-installer catches up. It is not a replacement for the Windows build — gaming
-mode stays there — and `desktop/README.md` covers carrying progress across
-from an existing install.
+For the PC there are two routes, both in `desktop/`. `Update Oreum to 1.4.0.bat`
+updates an existing Windows install in place: it swaps the app's code for a
+1.4.0 build with the same sentence questions, keeps the 1.3.0 code beside it,
+and leaves the progress database alone, so gaming mode and everything learned
+stay exactly as they were. `Oreum-1.4.0.bat` instead opens the web app in a
+window of its own for anyone who has not installed it. `desktop/README.md`
+covers both.
