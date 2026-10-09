@@ -18,11 +18,26 @@ Windows may warn about a downloaded script the first time: choose **More
 info -> Run anyway**. If it says it cannot write to the install folder,
 right-click it and choose **Run as administrator**.
 
-What changes: a Practice session now asks sentence questions as well as word
-ones — one question in five, chosen from the words that session is already
-working on. Put the words in order, which particle fits, what does this mean.
-Answering one credits every word in it, so sentences move the same progress
-words do. Gaming mode, the Smart Session and everything else are untouched.
+What changes, in two places.
+
+**Practice** now asks sentence questions as well as word ones — one question
+in five, chosen from the words that session is already working on. Put the
+words in order, which particle fits, what does this mean. Answering one
+credits every word in it, so sentences move the same progress words do.
+
+**Smart Session** now reaches its sentence and grammar questions straight
+away. It had them built all along, but every route to them waited until
+Hangul reading passed 45%, and below that a session quietly contained no
+sentence at all — the planner recorded "Hangul first" as the reason, where
+only the developer log would show it. That wait is gone. On the same
+progress, a session that asked 0 sentence questions now asks 13 and
+introduces a grammar point, with the Hangul drills still in the mix.
+
+The trade is the one the wait was there for: a sentence can now come up while
+the alphabet is still new. Hangul drills carry on either way, so it closes on
+its own.
+
+Gaming mode, the vocabulary, the stages and everything else are untouched.
 
 To undo it: delete `app.asar` in the install folder's `resources` folder and
 rename `app.asar.1.3.0-backup` back to `app.asar`.
